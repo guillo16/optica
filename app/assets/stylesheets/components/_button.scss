@@ -1,0 +1,21 @@
+.btn-home {
+  margin-top: 20px;
+  font-weight: bold;
+  padding: 12px 30px;
+  background-color: black;
+  color: white;
+  border-radius: 6px;
+  font-size: 16px;
+  &:hover {
+    color: grey;
+    text-decoration: none;
+  }
+}
+@media(max-width: 600px) {
+  .btn-home {
+    margin-top: 20px;
+    padding: 12px 30px;
+    font-size: 16px;
+  }
+}
+
