@@ -5,7 +5,7 @@
   </div>
 </div>
 <div class="articles-title">
-  <div class="main-wrapper">
+  <div class="article-wrapper">
     <h2>Ultimas Noticias</h2>
   </div>
 </div>
@@ -15,7 +15,7 @@
 </div>
 <% else %>
 <% end %>
-<div class="main-wrapper">
+<div class="article-wrapper">
   <div class="article-main-container">
     <% @articles.each do |article| %>
     <%= render 'shared/articles_card', article: article %>
