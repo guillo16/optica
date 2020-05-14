@@ -1,0 +1,18 @@
+<%= render 'shared/navbar' %>
+<% if user_signed_in? %>
+<br><br><br>
+<div class="p-3">
+  <%= link_to 'Editar Articulo', edit_article_path(@article), class: 'btn btn-warning btn-lg btn-block' %>
+  <%= link_to 'Eliminar articulo', @article, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger btn-lg btn-block' %>
+</div>
+<% else %>
+<% end %>
+<div class="article-show-container">
+  <%= cl_image_tag @article.photo.key %>
+  <h2><%= @article.title %></h2>
+  <h3><%= @article.subtitle %></h3>
+  <p><%= @article.content %></p>
+</div>
+<div class="p-3 pb-5 text-center">
+  <%= link_to 'Volver', :back, class: 'btn-main'  %>
+</div>

@@ -1,0 +1,27 @@
+<%= render 'shared/navbar' %>
+<div class="article-banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);">
+  <div>
+    <h1>NOVEDADES</h1>
+  </div>
+</div>
+<div class="articles-title">
+  <div class="article-wrapper">
+    <h2>Ultimas Noticias</h2>
+  </div>
+</div>
+<% if user_signed_in? %>
+<div class="p-5 text-center">
+  <%= link_to 'Crear Noticia', new_article_path, class: 'btn-dark btn-lg btn-block'  %>
+</div>
+<% else %>
+<% end %>
+<div class="article-wrapper">
+  <div class="article-main-container">
+    <% @articles.each do |article| %>
+    <%= render 'shared/articles_card', article: article %>
+    <% end %>
+  </div>
+  <div class="p-5 text-center">
+    <%= link_to 'Volver', root_path, class: 'btn-main'  %>
+  </div>
+</div>

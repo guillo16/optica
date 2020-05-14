@@ -1,0 +1,16 @@
+<div class="footer d-md-flex justify-content-between align-items-center">
+  <div class="footer-links">
+    <% if user_signed_in? %>
+    <% else %>
+    <%= link_to "Login", new_user_session_path, class: "nav-link" %>
+    <% end %>
+    <%= link_to 'Contacto', new_contact_path %>
+    <%= link_to 'Direcciones', new_contact_path %>
+  </div>
+  <div class="">
+   <i class="far fa-copyright">Centro de ojos Argañaraz SRL</i>
+ </div>
+ <div class="footer-copyright">
+  Made By <i class="fas fa-chess-king"></i> <a href="#">GW-WEB</a>
+</div>
+</div>

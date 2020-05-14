@@ -1,0 +1,12 @@
+<h2>Crear Articulo</h2>
+<%= simple_form_for @article do |f| %>
+<p class="m-0">Titulo</p>
+<%= f.input :title, label: false %>
+<p class="m-0">Subtitulo</p>
+<%= f.input :subtitle, label: false %>
+<p class="m-0">Foto</p>
+<%= f.input :photo, as: :file, label: false %>
+<p class="m-0">Contenido</p>
+<%= f.input :content, input_html: { class: "form-control form-control form-control-lg", id:"exampleFormControlTextarea1", rows:"5" }, label: false %>
+<%= f.submit 'Crear Articulo', class: 'btn btn-primary btn-block' %>
+<% end %>
