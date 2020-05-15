@@ -1,7 +1,7 @@
 .home-banner {
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: calc(100vh - 114px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -22,7 +22,6 @@
   background-attachment: fixed;
   height: 60vh;
 }
-
 
 
 .banner-login {
