@@ -12,6 +12,22 @@
 }
 }
 
+.contact-wrapper {
+  display: flex;
+  justify-content: center;
+  h2 {
+    font-size: 32px;
+    font-weight: bold;
+  }
+}
+
+.border-form {
+  width: 20px;
+  margin: 0 auto;
+  border-bottom: 4px solid red;
+  margin-bottom: 50px;
+}
+
 .form-container {
   margin-top: 10px;
   margin-bottom: 20px;
