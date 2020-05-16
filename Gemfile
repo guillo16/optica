@@ -9,7 +9,7 @@ gem 'puma'
 gem 'rails', '5.2.4.2'
 gem 'redis'
 gem 'cloudinary', '~> 1.12.0'
-
+gem 'mail_form'
 
 gem 'autoprefixer-rails'
 gem 'font-awesome-sass', '~> 5.12.0'

@@ -1,2 +1,30 @@
-<h1>Contacts#new</h1>
-<p>Find me in app/views/contacts/new.html.erb</p>
+<%= render 'shared/navbar' %>
+<div class="contact-wrapper">
+  <div>
+    <h2>CONTACTENOS</h2>
+    <h4 class="border-form"></h4>
+    <div class="form-container">
+      <%= simple_form_for @contact do |f| %>
+      <h3>Nombre<strong style="color:red; font-size: 16px;">*</strong></h3>
+      <div class="form-group">
+        <%= f.input :name, input_html: { class: "form-control form-control-lg"}, label: false%>
+      </div>
+      <h3>Email<strong style="color:red; font-size: 16px;">*</strong></h3>
+      <div class="form-group">
+        <%= f.input :email, input_html: { class: "form-control form-control-lg"}, label: false %>
+      </div>
+      <h3>Mensaje<strong style="color:red; font-size: 16px;">*</strong></h3>
+      <div class="form-group">
+        <%= f.input :message, :as => :text, input_html: { class: "form-control", id:"exampleFormControlTextarea1", rows:"5" }, label: false %>
+      </div>
+      <h4>Por favor escriba su mensaje. Un miembro de nuestro equipo le respondera lo más rapido posible.</h4>
+      <div class="hidden">
+        <%= f.input :nickname %>
+      </div>
+      <div class="guillo w-100">
+        <%= f.submit 'Enviar', class: "btn btn-primary btn-lg btn-block" %>
+      </div>
+      <% end %>
+    </div>
+  </div>
+</div>
