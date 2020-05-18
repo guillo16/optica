@@ -1,0 +1,33 @@
+.contact-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  margin-bottom: 60px;
+  h2 {
+    font-size: 32px;
+    font-weight: bold;
+  }
+}
+
+.contact-container {
+  h4 {
+    border-bottom: 3px solid red;
+    width: 30px;
+    margin-bottom: 10px;
+  }
+  p {
+    margin-bottom: 2px;
+  }
+}
+
+@media(max-width: 800px) {
+  .contact-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    h2 {
+      font-size: 32px;
+      font-weight: bold;
+    }
+  }
+}
