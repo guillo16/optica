@@ -20,7 +20,7 @@
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  height: 60vh;
+  height: 80vh;
 }
 
 
@@ -35,8 +35,8 @@
 
 .article-banner {
   background-size: cover;
-  background-position: center;
-  height: 40vh;
+  background-position: 90% 54%;
+  height: 45vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,6 +47,12 @@
     font-size: 32px;
     font-weight: bold;
   }
+}
+
+.contact-banner {
+  background-size: cover;
+  background-position: 90% 20%;
+  height: 40vh;
 }
 
 .banner-about {
@@ -67,8 +73,12 @@
 
 @media(max-width: 600px) {
   .home-banner {
-  h1 {
-    font-size: 56px;
+    h1 {
+      font-size: 56px;
+    }
   }
-}
+  .home-banner-secondary {
+    background-attachment: scroll;
+    height: 50vh;
+  }
 }
