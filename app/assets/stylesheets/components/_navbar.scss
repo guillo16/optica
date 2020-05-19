@@ -13,7 +13,7 @@
     margin: 0;
     color: white;
     margin-left: 4px;
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 
@@ -26,6 +26,11 @@
     margin-left: 10px;
   }
 }
+.fa-map-marker-alt {
+  font-size: 18px !important;
+}
+
+
 
 
 
@@ -35,6 +40,10 @@
   position: sticky !important;
   top: 0px;
   border-bottom: 5px solid black;
+  a {
+    color: black !important;
+    font-size: 16px;
+  }
 }
 
 .navbar-lewagon .navbar-collapse {
